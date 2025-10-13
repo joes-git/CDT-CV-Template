@@ -2,16 +2,16 @@
 \input{config/header_settings.tex}
 \begin{document}
 
-\name{Firstname Lastname}
-  \tagline{Job Role}
+\name{Joe Egan}
+  \tagline{High Energy Physics, Large Language Models, Data Science}
 
 \personalinfo{ % these are all option, comment out any you don't want
-  \email{first.last.23@ucl.ac.uk}
-  \email{personal@gmail.com}
-  \phone{07000 000000}
-  \linkedin{username} % this just needs your <username>, which will look something like 'emily-smith', the link will render as https://www.linkedin.com/in/<username>
-  \homepage{www.ucl.ac.uk/astrophysics/name-phd-student}
-  \github{username} % this just needs your <username>, which will look something like 'emily-smith', the link will render as https://github.com/<username>
+  \email{joe.egan.23@ucl.ac.uk}
+  \email{joseph.caimin.egan@cern.ch}
+  % \phone{}
+  \linkedin{joe-egan} % this just needs your <username>, which will look something like 'emily-smith', the link will render as https://www.linkedin.com/in/<username>
+  % \homepage{www.ucl.ac.uk/astrophysics/name-phd-student}
+  \github{joes-git} % this just needs your <username>, which will look something like 'emily-smith', the link will render as https://github.com/<username>
   \location{London}
 }
 
@@ -20,87 +20,120 @@
 \begin{paracol}{2}
 
 %% CDT Project Info
-\cvevent{PhD: CDT Data Intensive Science, PHD title}{University College London}{Oct 2023 -- Present}{London, UK}
+\cvevent{PhD: CDT Data Intensive Science, High Energy Physics}{University College London}{Oct 2023 -- Present}{London, UK}
 \begin{itemize}
-\item Influential modules include ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique.
-\item Alongside this, my thesis project is in ...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. Maecenas pellentesque mi orci, ultricies interdum erat tristique et.
+\item High Energy Physics student on the ATLAS experiment at CERN.
+\item Physics research focuses on making model independent measurements with the ATLAS detector, and re-interpreting existing results to set novel constraints on physics beyond the Standard Model.
+\item Experienced in building and deploying tools utlising Large Language Models, such as a Retrieval Augmented Generation (RAG) AI assistant for the ATLAS experiment.
 \end{itemize}
 %%
 
 %% Experience
 \cvsection[]{Experience}
 
-\cvevent{ML Research Group Industry Placement}{...}{Jan 2024 -- Present}{London, UK}
+\cvevent{chATLAS: AI assistant for the ATLAS collaboration}{The ATLAS experiment}{Oct 2024 -- Present}{CERN, Switzerland}
 \begin{itemize}
-\item Spent time working ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. Maecenas pellentesque mi orci, ultricies interdum erat tristique et. Nulla facilisi. 
-\item Conducted ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-\item Also carried out ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. 
+\item Core developer on the chATLAS project, an AI assistant based on Retrieval Augmented Generation (RAG).
+\item Built a modular suite of python packages to scrape ATLAS documentation, create and store document embedding vectors, efficiently search the database
+ and pass the retrieved documents to a Large Language Model (LLM).
+\item Built and deployed a scheduled CI/CD pipeline to periodically re-scrape the data sources and update the embedding database.
+\item Paper in preparation.
 \end{itemize}
 
-\cvevent{Other role}{A place}{mon\_start -- mon\_end year}{location, country}
+\cvevent{Analysing Immigration Sentiment in UK politics with Machine Learning}{The Guardian}{Jan 2024 -- Apr 2024}{London, UK}
 \begin{itemize}
-\item worked as the \nth{3} person ever to... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique.In hac habitasse platea dictumst. Mauris sit amet nisi at mi tristique posuere. Etiam tincidunt magna id nisi mollis, vel venenatis enim porttitor. Proin rhoncus ex ut metus hendrerit tincidunt. Morbi a ultrices tellus. 
-\end{itemize}
-% if you were carrying on a related role 
-\cvevent{}{a different place}{mon\_start year -- mon\_end year}{location, country}
-\begin{itemize}
-\item an amazing oppurtunity to ... In in eros eu nisi condimentum placerat nec et nisi. Phasellus sed tristique magna. In hac habitasse platea dictumst. Mauris sit amet nisi at mi tristique posuere. Etiam tincidunt magna id nisi mollis, vel venenatis enim porttitor. Proin rhoncus ex ut metus hendrerit tincidunt. Morbi a ultrices tellus. 
+\item Used natural language processing and large language models perform a quantitative analysis of immigration rhetoric in UK House of Commons speeches.
+\item Built an end-to-end data analysis pipeline: speech scraping, increasing amount of relevant snippets for annotation, training a classifier, performing inference and analysis of results.
+\item Engineered and tested prompts to use an LLM as an annotator. We were able to show that using an LLM did not degrade the inter-annotator agreement. This enabled the size of the training dataset for the classifier to be significantly increased with limited person power.
+\item Paper in preparation.
 \end{itemize}
 
-\cvevent{Other role}{employer}{mon\_start year -- mon\_end year}{location, country}
+\cvevent{Contur: Gaining new insights into physics Beyond the Standard Model from repurposed LHC results}{UCL}{Sep 2023 -- Present}{London, UK}
 \begin{itemize}
-\item worked as a... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. Maecenas pellentesque mi orci, ultricies interdum erat tristique et. Nulla facilisi. In 
-\item ultricies fringilla commodo. Quisque arcu massa, tempus vel placerat vel, rutrum quis mi. Sed eu tempor lacus, et gravida enim. Sed et auctor neque. Proin suscipit justo et rhoncus suscipit.
+\item Core developer on the Contur project, which reuses existing LHC measurements to constrain new physics models.
+\item Overhauled the statistical calculations to use the Spey package, allowing for parameter fitting, modelling higher order signal processes and profiling nuisance parameters.
+\item Applied Contur to set new limits on a Beyond the Standard Model theory involving dark matter candidates arising from the promotion of baryon number to a local gauge symmetry.
+Paper published in Physical Review D.
+\item Applied Contur to constrain the couplings of axion-like particles to top quarks and gluons. Submitted to JHEP.
 \end{itemize}
-%%
 
 \switchcolumn %back to the top, next column
 
 %% Extracurricular Activities
-\cvsection{Extracurricular}
+\cvsection{Publications}
 
-\color{body}
-In my personal life I did lots of things, I am really interested in ...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. Maecenas pellentesque mi orci, ultricies interdum erat tristique et. Nulla facilisi. In ultricies fringilla commodo. Quisque arcu massa, tempus vel placerat vel, rutrum quis mi. Sed eu tempor lacus, et gravida enim. Sed et auctor neque. Proin suscipit justo et rhoncus suscipit.
+\begin{itemize}
+  \item "Local baryon number at the LHC" \textit{Phys. Rev. D 112, 015012 (2025)} [DOI: 10.1103/2wbm-g6yv] [arXiv: 2505.06341]
+  \item "Probing the coupling of axions to tops and gluons with LHC measurements"
+  \item "The evolution of immigration political rhetoric in the  UK" \textit{In preparation}
+  \item "chATLAS: An AI assistant for the ATLAS collaboration" \textit{In preparation}
+
+\end{itemize}
 %%
+
+\cvsection{Selected Talks}
+
+\cvevent
+{ATLAS Week}
+{chATLAS: An AI assistant for the ATLAS collaboration}
+{Sep 2025}
+{Paestum, Italy}
+
+\cvevent
+{ATLAS Software and Computing Week}
+{Progress on chATLAS during my ATLAS Qualification Project}
+{Oct 2025}
+{Ljubljana, Slovenia}
+
+\cvevent
+{LHC Re-Interpretation Workshop}
+{Constraints On New Theories Using Rivet: Version 3.1 update}
+{Jan 2025}
+{CERN, Switzerland}
 
 %% Skills
 \cvsection{Skills}
-\cvtag{A thing i am good at} 
-\cvtag{and another} \break
-\cvtag{ Lorem ipsum}
-\cvtag{rutrum quis mi.}
+% \cvtag{A thing i am good at} 
+% \cvtag{and another} \break
+% \cvtag{ Lorem ipsum}
+% \cvtag{rutrum quis mi.}
 
-\divider\smallskip
+% \divider\smallskip
 
 \cvtag{Python}
+\cvtag{C++}
+\cvtag{SQL}
+\cvtag{Bash}
 \cvtag{Git}
-\cvtag{another program i know}
-\cvtag{...}
-\cvtag{Quisque }
-\cvtag{ultricies}
-\cvtag{Maecenas}
+\cvtag{CI/CD}
+\cvtag{uv}
+\cvtag{ruff}
+\cvtag{ty}
+\cvtag{spaCy}
+\cvtag{LangChain}
+\cvtag{HPC}
 %%
 
 %% Language (this section is optional, if you only speak one language you can delete it , PS - GCSE is about A2/B1, A level is B2)
-\cvsection{Language}
+% \cvsection{Language}
 
-\cvskill{German \textcolor{body}{Native}}{5}
-\cvskill{English \textcolor{body}{C1}}{4}
-\cvskill{Language \textcolor{body}{level}}{2}
+% \cvskill{German \textcolor{body}{Native}}{5}
+% \cvskill{English \textcolor{body}{C1}}{4}
+% \cvskill{Language \textcolor{body}{level}}{2}
 %%
 
 %% Education
 \cvsection{Education}
 
-\cveduevent{Undergrad degree}{some University}{start -- end}{location}{\nth{1} Class Hons}
-\cveduevent{list A-Levels that i did}{some VI Form}{start -- end}{location}{A*A*C}
+\cveduevent{MPhys (Hons.) Physics}{University of Manchester}{2018 -- 2022}{Manchester}{\nth{1} Class Hons (83\% average)}
+\cveduevent{A Level Maths, Physics, Chemistry}{Silverdale School}{2011 -- 2018}{Sheffield}{A*A*A*}
 %%
 
 %% References
 \cvsection{References}
-\cvref{reference name -- relation to me}{reference\_email@ucl.ac.uk}
+\cvref{Prof. Jonathan Butterworth -- Supervisor}{j.butterworth@ucl.ac.uk}
 
-\cvref{reference two name -- relation to me}{reference2\_email@ucl.ac.uk}
+\cvref{Dr. Gabriel Facini -- chATLAS Supervisor}{gabriel.facini@ucl.ac.uk}
 \divider %do not leave a line between this and the last reference
 
 Additional references available on request
