@@ -4,7 +4,7 @@
 \begin{document}
 
 \name{Joe Egan}
-  \tagline{High Energy Physics, Large Language Models, Data Science}
+  \tagline{High Energy Physics, Large Language Models, Machine Learning}
 
 \personalinfo{ % these are all option, comment out any you don't want
   \email{joe.egan.23@ucl.ac.uk}
@@ -24,7 +24,7 @@
 %% CDT Project Info
 \cvevent{PhD: CDT Data Intensive Science, High Energy Physics}{University College London}{Oct 2023 -- Present}{London, UK}
 \begin{itemize}
-\item High Energy Physicist, focused on making model-independent measurements with the ATLAS experiment and re-interpreting existing model-independent results to set novel constraints on physics beyond the Standard Model.
+\item High Energy Physicist, focused on making model-independent measurements with the ATLAS experiment and the re-interpretation of exisitng measurements to set novel constraints on physics beyond the Standard Model.
 \item Experienced in building and deploying tools utlising Large Language Models (LLMs), such as a Retrieval Augmented Generation (RAG) AI assistant.
 \end{itemize}
 %%
@@ -32,30 +32,32 @@
 %% Experience
 \cvsection[]{Experience}
 
+\cvevent{Advanced Causal Inference Researcher}{Spotify}{Feb 2026 -- Present}{London, UK}
+\begin{itemize}
+  \item Core researcher in an ongoing propject at the intersection of causal inference and machine learning.
+  \item Applying novel causal methods to generative models and fine-tuning problems.
+\end{itemize}
+
 \cvevent{chATLAS: AI assistant for the ATLAS collaboration}{The ATLAS Experiment}{Oct 2024 -- Present}{CERN, Switzerland}
 \begin{itemize}
 \item Core developer on the chATLAS project, responsible for taking the AI assistant from proof-of-concept to production.
-\item Built and deployed a scheduled CI/CD pipeline to periodically re-scrape the data sources and update the embedding database, ensuring the assistant has access to the most up to date information.
-\item Migrated semantic embedding hosting from in app memory to a bespoke Postgres server, providing a stable and scalable service that can meet the demands of the tool's growing popularity.
-\item chATLAS has answered 5,000 queries from ATLAS physicists in 6 months and was recently endorsed by a group convener as the go-to tool for information retrieval in the collaboration of over 3,000 physicists.
-\item Paper in preparation (see publications).
+\item Novel developments include building and deploying a scheduled scraping and embedding pipeline, and migration of semantic embedding hosting from in app memory to a bespoke Postgres server.
+\item chATLAS has answered 5,000 queries in 6 months, becoming the go-to tool for information retrieval in the collaboration of over 3,000 physicists.
 \end{itemize}
 
 \cvevent{Analysing Immigration Sentiment in UK politics with Machine Learning}{The Guardian}{Jan 2024 -- Apr 2024}{London, UK}
 \begin{itemize}
 \item Used natural language processing and LLMs to perform a quantitative analysis of immigration rhetoric in UK House of Commons speeches.
-\item Built an end-to-end data analysis pipeline: speech scraping, increasing amount of relevant snippets for annotation, training a classifier, performing inference and analysis of results.
+\item Built an end-to-end data analysis pipeline: speech scraping, immigration snippet curation, training a classifier, performing inference and analysis of results.
 \item Engineered and tested prompts to use a LLM as an annotator, finding that an LLM did not degrade the inter-annotator agreement versus humans only. 
-\item Applied this finding to use a LLM to annotate 22,000 speech snippets, saving at least 700 hours of human annotation.
-\item Paper in preparation (see publications).
+\item Applied this finding to use a LLM to annotate 22,000 speech snippets, saving over 700 hours of human annotation.
+\item Work resulted in a paper submitted to PNAS, and a feature article in The Guardian.
 \end{itemize}
 
 \cvevent{Contur: New insights into physics Beyond the Standard Model from repurposed LHC results}{UCL}{Sep 2023 -- Present}{London, UK}
 \begin{itemize}
-\item Core developer on the Contur project, which reuses existing LHC measurements to constrain new physics models.
-\item Overhauled the statistical calculations to use the Spey package, allowing for parameter fitting, modelling higher order signal processes and profiling nuisance parameters.
-\item This work resulted in the first use of Contur in an ATLAS publication.
-\item Further applied Contur to set novel constraints on two Beyond Standard Model theories, leading to two publications (see publications).
+\item Core developer on the Contur project. Responsible for overhauling the statistical calculations, allowing for parameter fitting, modelling higher order signal processes and profiling nuisance parameters.
+\item My work has led to the first use of Contur in an ATLAS publication, as well setting novel constraints on two Beyond Standard Model theories, leading to two further publications.
 \end{itemize}
 
 \switchcolumn %back to the top, next column
@@ -64,12 +66,11 @@
 \cvsection{Publications}
 
 \begin{itemize}
-  \item "Local baryon number at the LHC" \textit{Phys. Rev. D 112, 015012 (2025)} [DOI: 10.1103/2wbm-g6yv] [arXiv: 2505.06341]
-  \item "Probing the coupling of axions to tops and gluons with LHC measurements" \textit{Submitted to JHEP} [arXiv: 2508.21660]
-  \item "A measurement of the high-mass $\tau\bar\tau$ production cross-section at $\sqrt{s}=$~13~TeV with the ATLAS detector and constraints on new particles and couplings" \textit{JHEP 10, 054 (2025)} [arXiv: 2503.19836]
-  \item "The evolution of immigration political rhetoric in the  UK" \textit{In preparation}
+  \item "A measurement of the high-mass $\tau\bar\tau$ production cross-section at $\sqrt{s}=$~13~TeV with the ATLAS detector and constraints on new particles and couplings" \textit{JHEP 10, 054 (2025)}
+  \item "Local baryon number at the LHC" \textit{Phys. Rev. D 112, 015012 (2025)}
+  \item "Probing the coupling of axions to tops and gluons with LHC measurements" \textit{JHEP 02 (2026) 073}
+  \item "A Century of Immigration Rhetoric in the UK Parliament" \textit{Submitted to PNAS}
   \item "chATLAS: An AI assistant for the ATLAS collaboration" \textit{In preparation}
-
 \end{itemize}
 %%
 
@@ -109,8 +110,7 @@
 \cvtag{Git}
 \cvtag{CI/CD}
 \cvtag{uv}
-\cvtag{ruff}
-\cvtag{ty}
+\cvtag{PyTorch}
 \cvtag{spaCy}
 \cvtag{LangChain}
 \cvtag{HPC}
