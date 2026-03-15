@@ -1,5 +1,6 @@
 \documentclass[10pt,a4paper,ragged2e,withhyper,normalphoto]{config/altacv}
 \input{config/header_settings.tex}
+\usepackage{amsmath}
 \begin{document}
 
 \name{Joe Egan}
@@ -12,6 +13,7 @@
   \linkedin{joe-egan} % this just needs your <username>, which will look something like 'emily-smith', the link will render as https://www.linkedin.com/in/<username>
   % \homepage{www.ucl.ac.uk/astrophysics/name-phd-student}
   \github{joes-git} % this just needs your <username>, which will look something like 'emily-smith', the link will render as https://github.com/<username>
+  % \gitlab{joe-egan} % not sure how to make this work
   \location{London}
 }
 
@@ -22,39 +24,38 @@
 %% CDT Project Info
 \cvevent{PhD: CDT Data Intensive Science, High Energy Physics}{University College London}{Oct 2023 -- Present}{London, UK}
 \begin{itemize}
-\item High Energy Physics student on the ATLAS experiment at CERN.
-\item Physics research focuses on making model independent measurements with the ATLAS detector, and re-interpreting existing results to set novel constraints on physics beyond the Standard Model.
-\item Experienced in building and deploying tools utlising Large Language Models, such as a Retrieval Augmented Generation (RAG) AI assistant for the ATLAS experiment.
+\item High Energy Physicist, focused on making model-independent measurements with the ATLAS experiment and re-interpreting existing model-independent results to set novel constraints on physics beyond the Standard Model.
+\item Experienced in building and deploying tools utlising Large Language Models (LLMs), such as a Retrieval Augmented Generation (RAG) AI assistant.
 \end{itemize}
 %%
 
 %% Experience
 \cvsection[]{Experience}
 
-\cvevent{chATLAS: AI assistant for the ATLAS collaboration}{The ATLAS experiment}{Oct 2024 -- Present}{CERN, Switzerland}
+\cvevent{chATLAS: AI assistant for the ATLAS collaboration}{The ATLAS Experiment}{Oct 2024 -- Present}{CERN, Switzerland}
 \begin{itemize}
-\item Core developer on the chATLAS project, an AI assistant based on Retrieval Augmented Generation (RAG).
-\item Built a modular suite of python packages to scrape ATLAS documentation, create and store document embedding vectors, efficiently search the database
- and pass the retrieved documents to a Large Language Model (LLM).
-\item Built and deployed a scheduled CI/CD pipeline to periodically re-scrape the data sources and update the embedding database.
-\item Paper in preparation.
+\item Core developer on the chATLAS project, responsible for taking the AI assistant from proof-of-concept to production.
+\item Built and deployed a scheduled CI/CD pipeline to periodically re-scrape the data sources and update the embedding database, ensuring the assistant has access to the most up to date information.
+\item Migrated semantic embedding hosting from in app memory to a bespoke Postgres server, providing a stable and scalable service that can meet the demands of the tool's growing popularity.
+\item chATLAS has answered 5,000 queries from ATLAS physicists in 6 months and was recently endorsed by a group convener as the go-to tool for information retrieval in the collaboration of over 3,000 physicists.
+\item Paper in preparation (see publications).
 \end{itemize}
 
 \cvevent{Analysing Immigration Sentiment in UK politics with Machine Learning}{The Guardian}{Jan 2024 -- Apr 2024}{London, UK}
 \begin{itemize}
-\item Used natural language processing and large language models perform a quantitative analysis of immigration rhetoric in UK House of Commons speeches.
+\item Used natural language processing and LLMs to perform a quantitative analysis of immigration rhetoric in UK House of Commons speeches.
 \item Built an end-to-end data analysis pipeline: speech scraping, increasing amount of relevant snippets for annotation, training a classifier, performing inference and analysis of results.
-\item Engineered and tested prompts to use an LLM as an annotator. We were able to show that using an LLM did not degrade the inter-annotator agreement. This enabled the size of the training dataset for the classifier to be significantly increased with limited person power.
-\item Paper in preparation.
+\item Engineered and tested prompts to use a LLM as an annotator, finding that an LLM did not degrade the inter-annotator agreement versus humans only. 
+\item Applied this finding to use a LLM to annotate 22,000 speech snippets, saving at least 700 hours of human annotation.
+\item Paper in preparation (see publications).
 \end{itemize}
 
-\cvevent{Contur: Gaining new insights into physics Beyond the Standard Model from repurposed LHC results}{UCL}{Sep 2023 -- Present}{London, UK}
+\cvevent{Contur: New insights into physics Beyond the Standard Model from repurposed LHC results}{UCL}{Sep 2023 -- Present}{London, UK}
 \begin{itemize}
 \item Core developer on the Contur project, which reuses existing LHC measurements to constrain new physics models.
 \item Overhauled the statistical calculations to use the Spey package, allowing for parameter fitting, modelling higher order signal processes and profiling nuisance parameters.
-\item Applied Contur to set new limits on a Beyond the Standard Model theory involving dark matter candidates arising from the promotion of baryon number to a local gauge symmetry.
-Paper published in Physical Review D.
-\item Applied Contur to constrain the couplings of axion-like particles to top quarks and gluons. Submitted to JHEP.
+\item This work resulted in the first use of Contur in an ATLAS publication.
+\item Further applied Contur to set novel constraints on two Beyond Standard Model theories, leading to two publications (see publications).
 \end{itemize}
 
 \switchcolumn %back to the top, next column
@@ -64,7 +65,8 @@ Paper published in Physical Review D.
 
 \begin{itemize}
   \item "Local baryon number at the LHC" \textit{Phys. Rev. D 112, 015012 (2025)} [DOI: 10.1103/2wbm-g6yv] [arXiv: 2505.06341]
-  \item "Probing the coupling of axions to tops and gluons with LHC measurements"
+  \item "Probing the coupling of axions to tops and gluons with LHC measurements" \textit{Submitted to JHEP} [arXiv: 2508.21660]
+  \item "A measurement of the high-mass $\tau\bar\tau$ production cross-section at $\sqrt{s}=$~13~TeV with the ATLAS detector and constraints on new particles and couplings" \textit{JHEP 10, 054 (2025)} [arXiv: 2503.19836]
   \item "The evolution of immigration political rhetoric in the  UK" \textit{In preparation}
   \item "chATLAS: An AI assistant for the ATLAS collaboration" \textit{In preparation}
 
@@ -76,13 +78,13 @@ Paper published in Physical Review D.
 \cvevent
 {ATLAS Week}
 {chATLAS: An AI assistant for the ATLAS collaboration}
-{Sep 2025}
+{Oct 2025}
 {Paestum, Italy}
 
 \cvevent
 {ATLAS Software and Computing Week}
 {Progress on chATLAS during my ATLAS Qualification Project}
-{Oct 2025}
+{Sep 2025}
 {Ljubljana, Slovenia}
 
 \cvevent
@@ -125,8 +127,9 @@ Paper published in Physical Review D.
 %% Education
 \cvsection{Education}
 
-\cveduevent{MPhys (Hons.) Physics}{University of Manchester}{2018 -- 2022}{Manchester}{\nth{1} Class Hons (83\% average)}
-\cveduevent{A Level Maths, Physics, Chemistry}{Silverdale School}{2011 -- 2018}{Sheffield}{A*A*A*}
+\cveduevent{MPhys (Hons.) Physics}{University of Manchester}{2018 -- 2022}{Manchester, UK}{\nth{1} Class Hons (83\% average)}
+
+% \cveduevent{A Level Maths, Physics, Chemistry}{Silverdale School}{2011 -- 2018}{Sheffield}{A*A*A*}
 %%
 
 %% References
